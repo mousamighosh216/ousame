@@ -151,7 +151,7 @@ function ExperienceCard({ job }: { job: typeof EXPERIENCE[0] }) {
       {/* Header row */}
       <div className="flex flex-col sm:flex-row sm:items-start gap-4">
         {/* Period */}
-        <div className="sm:w-44 flex-shrink-0">
+        <div className="sm:w-44 shrink-0">
           <span
             style={{
               fontFamily: "'DM Mono', monospace",
@@ -258,7 +258,7 @@ function ProjectCard({ project }: { project: typeof PROJECTS[0] }) {
     >
       <div className="flex flex-col sm:flex-row sm:items-start gap-4">
         {/* Status */}
-        <div className="sm:w-44 flex-shrink-0">
+        <div className="sm:w-44 shrink-0">
           <span
             style={{
               display: "inline-flex",
@@ -455,7 +455,7 @@ export default function Work() {
             className="flex flex-col sm:flex-row sm:items-start gap-4 py-8 border-b"
             style={{ borderColor: "rgba(106,42,17,0.1)" }}
           >
-            <div className="sm:w-44 flex-shrink-0">
+            <div className="sm:w-44 shrink-0">
               <span
                 style={{
                   fontFamily: "'DM Mono', monospace",

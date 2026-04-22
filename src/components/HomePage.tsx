@@ -73,13 +73,12 @@ export default function Home() {
             Ghosh.
           </span>
         </h1>
-        <p
+        {/* <p
           className="text-lg  max-w-xl font-semibold leading-relaxed mb-10 animate-fade-up stagger-3"
           style={{ color: "var(--ember)", opacity: 0.8 }}
         >
-          I design and build digital experiences that feel considered, purposeful,
-          and human. Drawn to the space between elegant code and beautiful form.
-        </p>
+          I code and get it to work.
+        </p> */}
         <div className="flex flex-wrap gap-4 animate-fade-up stagger-4">
           <Link
             href="/projects"

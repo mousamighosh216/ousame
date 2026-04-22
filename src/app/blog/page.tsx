@@ -164,7 +164,7 @@ export default function Blogs() {
                 }}
               >
                 {/* Date */}
-                <div className="sm:w-32 flex-shrink-0">
+                <div className="sm:w-32 shrink-0">
                   <span
                     className="font-mono text-xs"
                     style={{ color: "var(--rust)", opacity: 0.5 }}
@@ -198,7 +198,7 @@ export default function Blogs() {
                 </div>
 
                 {/* Read time */}
-                <div className="sm:w-16 flex-shrink-0 text-right">
+                <div className="sm:w-16 shrink-0 text-right">
                   <span
                     className="font-mono text-xs"
                     style={{ color: "var(--rust)", opacity: 0.4 }}

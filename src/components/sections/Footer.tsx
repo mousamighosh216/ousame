@@ -91,7 +91,7 @@ export default function PortfolioFooter() {
       </div>
 
       {/* U-trail canvases */}
-      <div className="absolute bottom-[-30px] left-[-60px] pointer-events-none">
+      <div className="absolute -bottom-7.5 -left-15 pointer-events-none">
         <UTrail
         width={280}
         height={280}
@@ -99,7 +99,7 @@ export default function PortfolioFooter() {
         opacity={0.28}
         />  
       </div>
-      <div className="absolute top-[-40px] right-[-70px] pointer-events-none scale-x-[-1]">
+      <div className="absolute -top-10 -right-17.5 pointer-events-none scale-x-[-1]">
         <UTrail
         width={230}
         height={220}
@@ -126,7 +126,7 @@ export default function PortfolioFooter() {
 
             {/* Available badge */}
             <div className="inline-flex items-center gap-1.5 bg-[#C56D461a] border border-[#C56D4440] rounded-full px-3.5 py-1.5 text-[12px] text-[#712B13]">
-              <span className="w-2 h-2 rounded-full bg-[#6A611B] animate-pulse flex-shrink-0" />
+              <span className="w-2 h-2 rounded-full bg-[#6A611B] animate-pulse shrink-0" />
               Available for freelance work
             </div>
 

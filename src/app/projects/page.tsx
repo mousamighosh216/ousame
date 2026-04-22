@@ -1,45 +1,4 @@
-const projects = [
-  {
-    title: "Terrain Mapper",
-    desc: "An interactive tool for visualizing geological formations using WebGL and satellite data. Built for geologists who need fast, intuitive 3D terrain analysis in the browser.",
-    tags: ["WebGL", "TypeScript", "Three.js", "GLSL"],
-    year: "2024",
-    status: "Live",
-    link: "#",
-  },
-  {
-    title: "Driftwood CMS",
-    desc: "A lightweight headless CMS designed for writers — fast, offline-first, and distraction-free. No subscriptions, no cloud lock-in. Your content lives where you decide.",
-    tags: ["Rust", "SQLite", "React", "Tauri"],
-    year: "2024",
-    status: "Open Source",
-    link: "#",
-  },
-  {
-    title: "Heatline",
-    desc: "Real-time monitoring dashboard for industrial IoT sensors. Processes 50k+ events/sec with sub-100ms latency. Used in three manufacturing plants.",
-    tags: ["Go", "ClickHouse", "WebSockets", "D3.js"],
-    year: "2023",
-    status: "Live",
-    link: "#",
-  },
-  {
-    title: "Folio Kit",
-    desc: "A minimal design system and component library for developer portfolios. Opinionated defaults, zero configuration, beautiful out of the box.",
-    tags: ["React", "Tailwind", "Storybook", "NPM"],
-    year: "2023",
-    status: "Open Source",
-    link: "#",
-  },
-  {
-    title: "Pale Blue",
-    desc: "An astronomy companion app with offline star charts, ISS tracking, and planetary event reminders. 4,200 active monthly users.",
-    tags: ["Swift", "CoreData", "NASA API"],
-    year: "2022",
-    status: "iOS App",
-    link: "#",
-  },
-];
+import { projects } from "@/lib/data/projects";
 
 const statusColors: Record<string, { bg: string; text: string }> = {
   Live: { bg: "rgba(106,97,27,0.12)", text: "var(--sage)" },
@@ -90,7 +49,7 @@ export default function Projects() {
                 }}
               >
                 {/* Year */}
-                <div className="md:w-16 flex-shrink-0">
+                <div className="md:w-16 shrink-0">
                   <span
                     className="font-mono text-xs"
                     style={{ color: "var(--rust)", opacity: 0.5 }}
@@ -143,7 +102,7 @@ export default function Projects() {
                 </div>
 
                 {/* Arrow */}
-                <div className="md:w-8 flex-shrink-0 flex md:justify-end md:pt-1">
+                <div className="md:w-8 shrink-0 flex md:justify-end md:pt-1">
                   <a
                     href={project.link}
                     className="font-mono text-xs transition-opacity duration-200 opacity-30 group-hover:opacity-100"

@@ -2,14 +2,14 @@
 import { useState } from "react";
 
 const socials = [
-  { label: "GitHub", handle: "@yourhandle", href: "https://github.com" },
-  { label: "Twitter", handle: "@yourhandle", href: "https://twitter.com" },
+  { label: "GitHub", handle: "@mousamighosh216", href: "https://github.com/mousamighosh216" },
+  { label: "Twitter", handle: "@Mousami_2116", href: "https://x.com/Mousami_2116" },
   {
     label: "LinkedIn",
-    handle: "in/yourname",
-    href: "https://linkedin.com",
+    handle: "in/mousamighosh",
+    href: "https://linkedin.com/in/mousami-ghosh",
   },
-  { label: "Email", handle: "hello@yourdomain.com", href: "mailto:hello@yourdomain.com" },
+  { label: "Email", handle: "ghoshmousami216@gmail.com", href: "mailto:ghoshmousami216@gmail.com" },
 ];
 
 export default function Contact() {
@@ -198,8 +198,7 @@ export default function Contact() {
                 className="text-sm leading-relaxed"
                 style={{ color: "var(--ember)", opacity: 0.75 }}
               >
-                Open to freelance projects and full-time opportunities starting
-                Q3 2025.
+                Open to freelance projects and full-time opportunities.
               </p>
             </div>
 
