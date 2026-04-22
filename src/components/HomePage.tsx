@@ -21,16 +21,25 @@ const projects = [
 const posts = [
   {
     title: "On Building Things That Last",
-    date: "March 2025",
+    slug: "on-building-things-that-last",
+    date: "March 12, 2025",
+    category: "craft",
+    readTime: "8 min",
     excerpt:
-      "What erosion teaches us about software architecture — patience, pressure, and the beauty of simplicity.",
+      "What erosion teaches us about software architecture — patience, pressure, and the beauty of simplicity. Good code, like sandstone, reveals its structure over time.",
+    featured: true,
   },
   {
     title: "The Colour Theory of Code",
-    date: "January 2025",
+    slug: "the-colour-theory-of-code",
+    date: "January 28, 2025",
+    category: "design",
+    readTime: "6 min",
     excerpt:
-      "How thinking about design and aesthetics made me a better engineer, and vice versa.",
+      "How thinking about design and aesthetics made me a better engineer, and vice versa. Syntax highlighting is not just a comfort — it's a cognitive tool.",
+    featured: false,
   },
+  
 ];
 
 export default function Home() {
@@ -268,8 +277,8 @@ export default function Home() {
         <div className="space-y-6">
           {posts.map((post, i) => (
             <Link
-              key={post.title}
-              href="/blog"
+              key={post.slug}
+              href= "/blog"
               className="block group animate-fade-up"
               style={{ animationDelay: `${0.1 * i}s` }}
             >
