@@ -16,10 +16,26 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const res = await fetch("/api/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
+
+    if (!res.ok) throw new Error("Failed");
+
     setSubmitted(true);
-  };
+  } catch (err) {
+    console.error(err);
+    alert("Something went wrong");
+  }
+};
 
   const inputStyle = {
     backgroundColor: "rgba(254,207,151,0.5)",
@@ -164,6 +180,7 @@ export default function Contact() {
                     color: "var(--light)",
                     borderRadius: "2px",
                   }}
+                  onClick={() => console.log("BUTTON CLICKED")}
                 >
                   send message →
                 </button>
