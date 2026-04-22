@@ -51,7 +51,7 @@ export default function Blogs() {
             featured
           </p>
           <Link
-            href={`/blog/${featured.title}`} className="group block animate-fade-up stagger-1"
+            href={`/blog/${featured.slug}`} className="group block animate-fade-up stagger-1"
           >
             <div
               className="p-8 transition-all duration-300"
