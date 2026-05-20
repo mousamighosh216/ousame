@@ -5,18 +5,23 @@ import UTrail from "@/components/ui/Utrails";
 
 const projects = [
   {
-    title: "Terrain Mapper",
-    desc: "An interactive tool for visualizing geological formations using WebGL and satellite data.",
-    tags: ["WebGL", "TypeScript", "Three.js"],
-    year: "2024",
+    title: "qr Lab",
+    desc: "A visual + experimental platform for fault-tolerant encoding systems built on QR codes and Reed–Solomon error correction theory.",
+    tags: ["React", "TypeScript", "Jest"],
+    year: "2026",
+    status: "Live",
+    link: "https://github.com/mousamighosh216/qr-lab",
   },
   {
-    title: "Driftwood CMS",
-    desc: "A lightweight headless CMS designed for writers — fast, offline-first, and distraction-free.",
-    tags: ["Rust", "SQLite", "React"],
-    year: "2024",
+    title: "mini CDN",
+    desc: "Designed to demonstrate how real CDNs like Cloudflare / Fastly work internally.",
+    tags: ["Go", "net/http"],
+    year: "2026",
+    status: "Open Source",
+    link: "https://github.com/mousamighosh216/cdn",
   },
 ];
+
 
 const posts = [
   {
@@ -48,7 +53,7 @@ export default function Home() {
       
       {/* ── Background layer ── */}
       <UTrail 
-        className="fixed -mt-10 inset-0 -z-10 pointer-events-none"
+        className="fixed w-full -mt-10 inset-0 -z-10 pointer-events-none"
         width={300}
         height={400}
         lineWidth={15}
@@ -74,8 +79,8 @@ export default function Home() {
           designer · developer · maker
         </p> */}
         <h1
-          className="font-serif text-5xl sm:text-7xl font-medium leading-tight mb-8 animate-fade-up stagger-2"
-          style={{ color: "var(--shadow)" }}
+          className=" text-5xl sm:text-7xl font-medium leading-tight mb-8 animate-fade-up stagger-2"
+          style={{ fontFamily: "var(--font-Merriweather)" ,color: "var(--shadow)" }}
         >
           Mousami
           <span style={{ fontStyle: "italic", color: "var(--rust)", padding: "15px" }}>
@@ -132,12 +137,12 @@ export default function Home() {
           {[
             {
               label: "Building",
-              content: "A minimalist design-system toolkit for small teams who care about craft.",
+              content: "Systems which scale through art.",
             },
             {
               label: "Thinking about",
               content:
-                "How typography shapes trust. Why whitespace is never wasted. Brutalism vs warmth.",
+                "How can I play with Stock-Stimuli.",
             },
           ].map(({ label, content }) => (
             <div
@@ -252,7 +257,7 @@ export default function Home() {
       </section>
 
       {/* ── Latest Writing ── */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="flex items-center justify-between mb-10">
           <div className="flex items-baseline gap-3">
             <h2
@@ -305,7 +310,7 @@ export default function Home() {
             </Link>
           ))}
         </div>
-      </section>
+      </section> */}
     </div>
       </div>
       <div

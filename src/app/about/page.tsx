@@ -2,16 +2,12 @@ import Link from "next/link";
 
 const STACK = [
   {
-    label: "Design",
-    tools: ["Figma", "Framer", "Spline", "Adobe XD", "Protopie", "Lottie"],
-  },
-  {
     label: "Frontend",
-    tools: ["React", "Next.js", "TypeScript", "Tailwind", "GSAP", "Framer Motion"],
+    tools: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion"],
   },
   {
     label: "Backend",
-    tools: ["Node.js", "Go", "Rust", "PostgreSQL", "Redis", "SQLite"],
+    tools: ["Node.js", "Go"],
   },
   {
     label: "Infrastructure",
@@ -127,7 +123,7 @@ export default function About() {
                 border: "3px solid rgba(255,255,255,0.6)",
               }}
             >
-              ✦
+              
             </div>
             <h2
               style={{
@@ -138,7 +134,7 @@ export default function About() {
                 marginBottom: 3,
               }}
             >
-              Your Name
+              Mousami Ghosh
             </h2>
             <p
               style={{
@@ -160,7 +156,7 @@ export default function About() {
                 opacity: 0.8,
               }}
             >
-              I work at the overlap of visual design and frontend engineering —
+              I work at the overlap of art and engineering —
               building interfaces that are considered, purposeful, and built to
               last. Currently open to freelance projects and full-time roles.
             </p>
@@ -245,11 +241,7 @@ export default function About() {
               marginBottom: 16,
             }}
           >
-            It started with tinkering — reskinning WordPress themes, breaking
-            things, then putting them back together better. Eventually I realised
-            that every visual decision I was making was also a code decision, and
-            every code decision was also a design decision. The two were
-            inseparable. I leaned into that.
+            I started to code when I was in 12th standard, when my CS teacher tasked us to make a project, A Management System though that project took more time than it was intented to but that was when I realised I need to learn coding, besides code I love art. So now I am trying to find a way to integrate Art with Technology.
           </p>
           <p
             style={{
@@ -260,7 +252,7 @@ export default function About() {
               marginBottom: 16,
             }}
           >
-            From there: freelance projects, internships, a startup or two. Building
+            From there: College provided me a stage to learn and grow still a long way to go. Building
             real products for real users with real constraints. Each one taught me
             something the theory never could — usually something painful, always
             something valuable.
@@ -363,7 +355,7 @@ export default function About() {
                 animationDelay: `${i * 0.1}s`,
               }}
             >
-              <span
+              {/* <span
                 style={{
                   display: "block",
                   fontFamily: "'Playfair Display', serif",
@@ -374,7 +366,7 @@ export default function About() {
                 }}
               >
                 {item.icon}
-              </span>
+              </span> */}
               <h3
                 style={{
                   fontFamily: "'Playfair Display', serif",

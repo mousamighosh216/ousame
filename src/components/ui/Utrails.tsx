@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import { useUTrail } from "@/hooks/useUtrails";
 
 type Trail = {
@@ -50,6 +50,13 @@ export default function UTrail({
     r: t.r * scale,
   }));
 
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const t = setTimeout(() => setVisible(true), 50);
+    return () => clearTimeout(t);
+  }, []);
+
   useUTrail({
     canvasRef,
     width,
@@ -65,7 +72,11 @@ export default function UTrail({
       className={className}
       style={{
         display: "block",
-        opacity,
+        opacity: visible ? opacity : 0,
+    transform: visible
+      ? "translateX(0) translateY(0)"
+      : "translateX(10px)", // 👉 slide from right (change direction here)
+    transition: "transform 0.8s cubic-bezier(0.22,1,0.36,1), opacity 0.6s ease",
         inset: 0,
         zIndex: 0,
         pointerEvents: "none",

@@ -25,7 +25,7 @@ export const Playwrite = localFont({
     },
     {
       path: "../fonts/PlaywriteIE-Light.ttf",
-      weight: "700",
+      weight: "300",
       style: "normal",
     },
   ],

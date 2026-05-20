@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Merriweather, Playwrite } from "@/lib/fonts";
 import "./globals.css";
 
-import Header from "@/components/sections/Header";
-import Footer from "@/components/sections/Footer";
 import LayoutClient from "./blog/LayoutClient";
 
 export const metadata: Metadata = {
@@ -19,7 +17,9 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang="en" data-scroll-behavior="smooth" className={`${Playwrite.variable} ${Merriweather.variable}`}>
+    <html lang="en" 
+    data-scroll-behavior="smooth" 
+    className={`${Playwrite.variable} ${Merriweather.variable}`}>
       <body>
         <LayoutClient>{children}</LayoutClient>
       </body>

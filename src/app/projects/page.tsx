@@ -18,8 +18,8 @@ export default function Projects() {
           projects
         </p>
         <h1
-          className="font-serif text-5xl sm:text-6xl font-medium leading-tight mb-6 animate-fade-up stagger-2"
-          style={{ color: "var(--shadow)" }}
+          className=" text-5xl sm:text-6xl font-medium leading-tight mb-6 animate-fade-up stagger-2"
+          style={{ color: "var(--shadow)",fontFamily: "var(--font-Merriweather)" }}
         >
           Things I&apos;ve
           <br />
@@ -65,7 +65,13 @@ export default function Projects() {
                       className="font-serif text-2xl font-medium transition-colors duration-200 group-hover:opacity-80"
                       style={{ color: "var(--shadow)" }}
                     >
-                      {project.title}
+                      <a
+                    href={project.link}
+                    style={{ color: "var(--ember)" }}
+                    aria-label={`View ${project.title}`}
+                  >
+                    {project.title}
+                  </a>
                     </h2>
                     <span
                       className="px-2 py-0.5 font-mono text-xs rounded-sm"
@@ -100,7 +106,6 @@ export default function Projects() {
                     ))}
                   </div>
                 </div>
-
                 {/* Arrow */}
                 <div className="md:w-8 shrink-0 flex md:justify-end md:pt-1">
                   <a
@@ -109,6 +114,7 @@ export default function Projects() {
                     style={{ color: "var(--rust)" }}
                     aria-label={`View ${project.title}`}
                   >
+                    
                     ↗
                   </a>
                 </div>

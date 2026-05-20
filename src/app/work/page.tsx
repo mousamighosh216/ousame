@@ -4,32 +4,6 @@ import Link from "next/link";
 
 const EXPERIENCE = [
   {
-    role: "Senior Product Designer & Engineer",
-    period: "Jan 2024 – Present",
-    company: "Terrain Studio",
-    location: "Remote",
-    tags: ["Figma", "Next.js", "TypeScript", "Tailwind", "Postgres"],
-    highlights: [
-      "Leading design and frontend for a spatial data platform serving 3 enterprise clients",
-      "Architected a component system used across 6 product surfaces with zero design-debt backlog",
-      "Reduced onboarding time from 4 days to under 6 hours via a redesigned setup experience",
-      "Established design–engineering handoff process adopted by the whole product team",
-      "Collaborated directly with founders on product strategy and go-to-market positioning",
-    ],
-  },
-  {
-    role: "Frontend Engineer",
-    period: "Apr 2023 – Dec 2023",
-    company: "Driftwork Labs",
-    location: "Bengaluru",
-    tags: ["React", "Node.js", "GraphQL", "WebSockets", "Redis"],
-    highlights: [
-      "Built real-time collaboration features for a document editing product with 12k MAU",
-      "Shipped a GraphQL subscription layer reducing UI data latency from 800ms to under 80ms",
-      "Owned the mobile-responsive redesign, improving mobile retention by 34%",
-    ],
-  },
-  {
     role: "Design Engineering Intern",
     period: "Oct 2022 – Mar 2023",
     company: "Krenno Labs",
@@ -91,10 +65,10 @@ const PROJECTS = [
 const EDUCATION = [
   {
     degree: "B.Tech. Computer Science & Engineering",
-    institution: "National Institute of Technology",
+    institution: "School of Information Technology",
     location: "Bhopal, India",
-    period: "2019 – 2023",
-    grade: "8.9 / 10.0",
+    period: "2024 – 2028",
+    grade: "7.9 / 10.0",
   },
 ];
 
@@ -369,10 +343,11 @@ export default function Work() {
           work
         </p>
         <h1
-          className="font-serif font-medium leading-tight mb-5 animate-fade-up stagger-2"
+          className=" font-medium leading-tight mb-5 animate-fade-up stagger-2"
           style={{
             fontSize: "clamp(36px,5.5vw,58px)",
             color: "var(--shadow)",
+            fontFamily: "var(--font-Merriweather)" 
           }}
         >
           Professional
@@ -388,7 +363,7 @@ export default function Work() {
           the code that runs them holds up over time.
         </p>
         <a
-          href="#"
+          href="https://drive.google.com/file/d/11eGg_UbQOrN1aNNOzL42ur1M-XTkKaTI/view?usp=sharing"
           className="inline-flex items-center gap-2 animate-fade-up stagger-4"
           style={{
             fontFamily: "'DM Mono', monospace",
@@ -418,7 +393,7 @@ export default function Work() {
         </div>
       </section>
 
-      {/* ── Featured Projects ── */}
+      {/* ── Featured Projects ──
       <section className="pt-16 pb-4">
         <SectionLabel>featured projects</SectionLabel>
         <div>
@@ -444,7 +419,7 @@ export default function Work() {
             all projects →
           </Link>
         </div>
-      </section>
+      </section> */}
 
       {/* ── Education ── */}
       <section className="pt-16 pb-20">
