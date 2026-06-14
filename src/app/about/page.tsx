@@ -109,7 +109,7 @@ export default function About() {
             }}
           >
             {/* Avatar placeholder */}
-            <div
+            {/* <div
               style={{
                 width: 64,
                 height: 64,
@@ -124,7 +124,7 @@ export default function About() {
               }}
             >
               
-            </div>
+            </div> */}
             <h2
               style={{
                 fontFamily: "'Playfair Display', serif",

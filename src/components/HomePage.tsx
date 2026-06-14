@@ -136,14 +136,14 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             {
-              label: "Building",
-              content: "Systems which scale through art.",
+              label: "Learning",
+              content: "Efficient integration of systems and art.",
             },
-            {
-              label: "Thinking about",
-              content:
-                "How can I play with Stock-Stimuli.",
-            },
+            // {
+            //   label: "Now Playing",
+            //   content:
+            //     "",
+            // },
           ].map(({ label, content }) => (
             <div
               key={label}
@@ -220,7 +220,13 @@ export default function Home() {
                     className="font-serif text-lg font-medium"
                     style={{ color: "var(--shadow)" }}
                   >
-                    {p.title}
+                    <a
+                    href={p.link}
+                    style={{ color: "var(--ember)" }}
+                    aria-label={`View ${p.title}`}
+                    >
+                      {p.title}
+                    </a>
                   </h3>
                   <span
                     className="font-mono text-xs"
